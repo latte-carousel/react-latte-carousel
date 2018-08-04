@@ -1,0 +1,45 @@
+const fs = require("fs");
+const path = require("path");
+const webpack = require("webpack");
+const CleanWebpackPlugin = require("clean-webpack-plugin");
+
+module.exports = {
+    mode: "production",
+    entry: "./src/latte-carousel.jsx",
+    devtool: "source-map",
+    module: {
+        rules: [
+            {
+                test: /\.jsx/,
+                use: {
+                    loader: "babel-loader",
+                },
+                exclude: /node_modules/,
+            },
+        ],
+    },
+    resolve: {
+        extensions: [".jsx"],
+    },
+    plugins: [new CleanWebpackPlugin(["./dist"]), new webpack.BannerPlugin(fs.readFileSync("./src/version", "utf8"))],
+    output: {
+        path: path.resolve(__dirname, "./dist"),
+        filename: "react-latte-carousel.min.js",
+        library: "ReactLatte",
+        libraryTarget: "umd",
+    },
+    externals: {
+        react: {
+            commonjs: "react",
+            commonjs2: "react",
+            amd: "react",
+            root: "React",
+        },
+        "latte-carousel": {
+            commonjs: "latte-carousel",
+            commonjs2: "latte-carousel",
+            amd: "latte-carousel",
+            root: "latte",
+        },
+    },
+};
