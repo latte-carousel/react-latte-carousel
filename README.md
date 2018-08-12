@@ -96,7 +96,7 @@ getOptions() {
 -   [x] Navigation dots
 -   [x] Rewind carousel
 -   [x] Autoplay carousel
--   [ ] Carousel events
+-   [x] Carousel events
 
 ## Build
 

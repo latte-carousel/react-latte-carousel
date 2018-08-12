@@ -5,21 +5,19 @@ const CleanWebpackPlugin = require("clean-webpack-plugin");
 
 module.exports = {
     mode: "production",
-    entry: "./src/latte-carousel.jsx",
+    entry: "./src/index.tsx",
     devtool: "source-map",
     module: {
         rules: [
             {
-                test: /\.jsx/,
-                use: {
-                    loader: "babel-loader",
-                },
+                test: /\.tsx/,
+                use: "ts-loader",
                 exclude: /node_modules/,
             },
         ],
     },
     resolve: {
-        extensions: [".jsx"],
+        extensions: [".tsx", ".jsx", ".js"],
     },
     plugins: [new CleanWebpackPlugin(["./dist"]), new webpack.BannerPlugin(fs.readFileSync("./src/version", "utf8"))],
     output: {
