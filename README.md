@@ -78,6 +78,7 @@ getOptions() {
         dots: true,
         rewind: true,
         autoplay: 0,
+        animation: 500,
         responsive: {
             "0": { count: 1.5, buttons: false },
             "480": { count: 2.5, buttons: false },
@@ -116,6 +117,8 @@ Run example:
 
 ```sh
 yarn run serve
+
+open http://localhost:8080/example
 ```
 
 Result files:

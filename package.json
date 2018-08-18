@@ -15,8 +15,9 @@
         "carousel",
         "responsive",
         "react",
+        "javascript",
         "slider",
-        "javascript"
+        "typescript"
     ],
     "homepage": "https://latte-carousel.github.io",
     "scripts": {
@@ -31,21 +32,21 @@
         "lint:eslint": "eslint './**/*.js'"
     },
     "devDependencies": {
-        "@types/react": "^16.0.7",
+        "@types/react": "^16.4.11",
         "@types/react-dom": "^16.0.7",
         "babel-standalone": "^6.26.0",
         "clean-webpack-plugin": "^0.1.19",
         "csscomb": "^4.2.0",
-        "eslint": "^5.1.0",
+        "eslint": "^5.4.0",
         "http-server": "^0.11.1",
-        "latte-carousel": "^1.2.0",
-        "prettier": "1.13.7",
-        "react": "^16.4.1",
-        "react-dom": "^16.4.1",
-        "ts-loader": "^4.4.2",
-        "tslint": "^5.10.0",
-        "typescript": "^2.9.2",
-        "webpack": "^4.15.1",
+        "latte-carousel": "^1.2.1",
+        "prettier": "1.14.2",
+        "react": "^16.4.2",
+        "react-dom": "^16.4.2",
+        "ts-loader": "^4.5.0",
+        "tslint": "^5.11.0",
+        "typescript": "^3.0.1",
+        "webpack": "^4.16.5",
         "webpack-command": "^0.4.1"
     }
 }
