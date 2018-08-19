@@ -13,6 +13,13 @@ This is a wrapper component for LatteCarousel.
 
 ## Usage
 
+There are two ways for using react-latte-carousel:
+
+-   Include both latte-carousel and react-latte-carousel packages and import using ES6 with Babel or Webpack.
+-   Include both UMD (Universal Module Definition) files and use it directly.
+
+This package already includes .d.ts files.
+
 ```html
 <!-- UMD - Package -->
 <link rel="stylesheet" href="latte-carousel.min.css">
@@ -21,9 +28,9 @@ This is a wrapper component for LatteCarousel.
 
 <!-- UMD - CDN -->
 <link rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/latte-carousel@1.1.1/dist/latte-carousel.min.css">
-<script src="https://cdn.jsdelivr.net/npm/latte-carousel@1.1.1/dist/latte-carousel.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/react-latte-carousel@0.9.0/dist/react-latte-carousel.min.js"></script>
+      href="https://cdn.jsdelivr.net/npm/latte-carousel@1.2.1/dist/latte-carousel.min.css">
+<script src="https://cdn.jsdelivr.net/npm/latte-carousel@1.2.1/dist/latte-carousel.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/react-latte-carousel@0.10.0/dist/react-latte-carousel.min.js"></script>
 ```
 
 ```jsx
@@ -78,6 +85,7 @@ getOptions() {
         dots: true,
         rewind: true,
         autoplay: 0,
+        animation: 500,
         responsive: {
             "0": { count: 1.5, buttons: false },
             "480": { count: 2.5, buttons: false },
@@ -96,7 +104,7 @@ getOptions() {
 -   [x] Navigation dots
 -   [x] Rewind carousel
 -   [x] Autoplay carousel
--   [ ] Carousel events
+-   [x] Carousel events
 
 ## Build
 
@@ -116,6 +124,8 @@ Run example:
 
 ```sh
 yarn run serve
+
+open http://localhost:8080/example
 ```
 
 Result files:
