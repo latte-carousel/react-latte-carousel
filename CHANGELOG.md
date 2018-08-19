@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.10.0] - 2018-08-19
+
+### Added
+
+-   CHANGELOG and other documentation files
+-   TypeScript .d.ts generation
+
+### Changed
+
+-   Updated dependencies
+-   TypeScript with Webpack build
+
 ## [0.9.0] - 2018-08-11
 
 ### Added
@@ -14,5 +26,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 -   Basic carousel wrapper
 -   Build tasks
 
-[unreleased]: https://github.com/latte-carousel/react-latte-carousel/compare/0.9.0...develop
+[unreleased]: https://github.com/latte-carousel/react-latte-carousel/compare/0.10.0...develop
+[0.10.0]: https://github.com/latte-carousel/react-latte-carousel/compare/0.9.0...0.10.0
 [0.9.0]: https://github.com/latte-carousel/react-latte-carousel/compare/4c69bc7e46f05013e1a0d0152de872ce437a55ce...0.9.0
