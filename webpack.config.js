@@ -25,6 +25,7 @@ module.exports = {
         filename: "react-latte-carousel.min.js",
         library: "ReactLatte",
         libraryTarget: "umd",
+        globalObject: `(typeof window !== "undefined" ? window : this)`,
     },
     externals: {
         react: {

@@ -23,30 +23,32 @@
     "scripts": {
         "build": "webpack",
         "watch": "webpack --watch",
-        "serve": "http-server './'",
+        "serve": "http-server \"./\"",
         "format": "yarn run format:prettier && yarn run format:csscomb",
-        "format:prettier": "prettier --find-config-path --write './src/**' './example/**'",
-        "format:csscomb": "csscomb './example'",
+        "format:prettier": "prettier --find-config-path --write \"./src/**\" \"./example/**\"",
+        "format:csscomb": "csscomb \"./example\"",
         "lint": "yarn run lint:tslint && yarn run lint:eslint",
-        "lint:tslint": "tslint -c 'tslint.json' './**/*.ts'",
-        "lint:eslint": "eslint './**/*.js'"
+        "lint:tslint": "tslint -c \"tslint.json\" \"./**/*.ts\"",
+        "lint:eslint": "eslint \"./**/*.js\""
     },
     "devDependencies": {
-        "@types/react": "^16.4.11",
-        "@types/react-dom": "^16.0.7",
+        "@types/react": "^16.4.16",
+        "@types/react-dom": "^16.0.9",
         "babel-standalone": "^6.26.0",
         "clean-webpack-plugin": "^0.1.19",
         "csscomb": "^4.2.0",
-        "eslint": "^5.4.0",
+        "eslint": "^5.6.1",
         "http-server": "^0.11.1",
-        "latte-carousel": "^1.2.1",
-        "prettier": "1.14.2",
-        "react": "^16.4.2",
-        "react-dom": "^16.4.2",
-        "ts-loader": "^4.5.0",
+        "prettier": "1.14.3",
+        "react": "^16.5.2",
+        "react-dom": "^16.5.2",
+        "ts-loader": "^5.2.1",
         "tslint": "^5.11.0",
-        "typescript": "^3.0.1",
-        "webpack": "^4.16.5",
+        "typescript": "^3.1.1",
+        "webpack": "^4.20.2",
         "webpack-command": "^0.4.1"
+    },
+    "peerDependencies": {
+        "latte-carousel": "^1.3.0"
     }
 }
