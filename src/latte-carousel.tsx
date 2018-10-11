@@ -17,6 +17,10 @@ export class LatteCarousel extends React.Component<ILatteCarouselProps> {
      * @memberof LatteCarousel
      */
     public next() {
+        if (this.carousel == null) {
+            return;
+        }
+
         this.carousel.trigger("next");
     }
 
@@ -26,6 +30,10 @@ export class LatteCarousel extends React.Component<ILatteCarouselProps> {
      * @memberof LatteCarousel
      */
     public previous() {
+        if (this.carousel == null) {
+            return;
+        }
+
         this.carousel.trigger("next");
     }
 
@@ -36,6 +44,10 @@ export class LatteCarousel extends React.Component<ILatteCarouselProps> {
      * @memberof LatteCarousel
      */
     public goTo(item: number) {
+        if (this.carousel == null) {
+            return;
+        }
+
         this.carousel.trigger("goto", item);
     }
 
@@ -46,6 +58,10 @@ export class LatteCarousel extends React.Component<ILatteCarouselProps> {
      * @memberof LatteCarousel
      */
     public render(): React.ReactNode {
+        if (typeof window === "undefined") {
+            return <div className="react-latte-carousel" />;
+        }
+
         return (
             <div className="react-latte-carousel">
                 <div className="latte-carousel" ref="carousel">
@@ -98,6 +114,10 @@ export class LatteCarousel extends React.Component<ILatteCarouselProps> {
      * @memberof LatteCarousel
      */
     private create() {
+        if (this.refs.carousel == null) {
+            return;
+        }
+
         this.carousel = new Carousel(this.refs.carousel as HTMLElement, this.props.options);
     }
 
@@ -108,6 +128,10 @@ export class LatteCarousel extends React.Component<ILatteCarouselProps> {
      * @memberof LatteCarousel
      */
     private destroy() {
+        if (this.carousel == null) {
+            return;
+        }
+
         this.carousel.remove();
         this.carousel = undefined;
     }
