@@ -29,6 +29,14 @@ export declare class LatteCarousel extends React.Component<ILatteCarouselProps> 
      */
     goTo(item: number): void;
     /**
+     * Triggers a carousel event.
+     *
+     * @param {string} event Event type.
+     * @param {*} [data] Event data.
+     * @memberof LatteCarousel
+     */
+    trigger(event: string, data?: any): void;
+    /**
      * Renders a wrapped `latte-carousel` element.
      *
      * @returns {React.ReactNode} React node element.

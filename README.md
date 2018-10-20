@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.com/latte-carousel/react-latte-carousel.svg?branch=master)](https://travis-ci.com/latte-carousel/react-latte-carousel)
 [![npm](https://img.shields.io/npm/v/react-latte-carousel.svg)](https://npmjs.com/package/react-latte-carousel)
 [![npm](https://img.shields.io/npm/l/react-latte-carousel.svg)](https://github.com/latte-carousel/react-latte-carousel/blob/master/LICENSE)
 
