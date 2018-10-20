@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.com/latte-carousel/react-latte-carousel.svg?branch=master)](https://travis-ci.com/latte-carousel/react-latte-carousel)
 [![npm](https://img.shields.io/npm/v/react-latte-carousel.svg)](https://npmjs.com/package/react-latte-carousel)
 [![npm](https://img.shields.io/npm/l/react-latte-carousel.svg)](https://github.com/latte-carousel/react-latte-carousel/blob/master/LICENSE)
 
@@ -28,9 +29,9 @@ This package already includes .d.ts files.
 
 <!-- UMD - CDN -->
 <link rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/latte-carousel@1.3.0/dist/latte-carousel.min.css">
-<script src="https://cdn.jsdelivr.net/npm/latte-carousel@1.3.0/dist/latte-carousel.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/react-latte-carousel@1.0.0/dist/react-latte-carousel.min.js"></script>
+      href="https://cdn.jsdelivr.net/npm/latte-carousel@1.4.0/dist/latte-carousel.min.css">
+<script src="https://cdn.jsdelivr.net/npm/latte-carousel@1.4.0/dist/latte-carousel.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/react-latte-carousel@1.1.0/dist/react-latte-carousel.min.js"></script>
 ```
 
 ```jsx
