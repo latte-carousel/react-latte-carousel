@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.0] - 2018-10-20
+
+### Added
+
+-   New carousel trigger events
+-   Travis CI
+
+### Changed
+
+-   Updated dependencies
+-   Webpack CLI
+
 ## [1.0.0] - 2018-10-10
 
 ### Fixed
@@ -36,7 +48,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 -   Basic carousel wrapper
 -   Build tasks
 
-[unreleased]: https://github.com/latte-carousel/react-latte-carousel/compare/1.0.0...develop
+[unreleased]: https://github.com/latte-carousel/react-latte-carousel/compare/1.1.0...develop
+[1.1.0]: https://github.com/latte-carousel/react-latte-carousel/compare/1.0.0...1.1.0
 [1.0.0]: https://github.com/latte-carousel/react-latte-carousel/compare/0.10.0...1.0.0
 [0.10.0]: https://github.com/latte-carousel/react-latte-carousel/compare/0.9.0...0.10.0
 [0.9.0]: https://github.com/latte-carousel/react-latte-carousel/compare/4c69bc7e46f05013e1a0d0152de872ce437a55ce...0.9.0
