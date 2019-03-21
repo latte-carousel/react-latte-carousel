@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.2.0] - 2019-03-21
+
+### Changed
+
+-   Updated dependencies
+-   Updated latte-carousel version to 1.5.2
+
 ## [1.1.0] - 2018-10-20
 
 ### Added
@@ -48,7 +55,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 -   Basic carousel wrapper
 -   Build tasks
 
-[unreleased]: https://github.com/latte-carousel/react-latte-carousel/compare/1.1.0...develop
+[unreleased]: https://github.com/latte-carousel/react-latte-carousel/compare/master...develop
+[1.2.0]: https://github.com/latte-carousel/react-latte-carousel/compare/1.1.0...1.2.0
 [1.1.0]: https://github.com/latte-carousel/react-latte-carousel/compare/1.0.0...1.1.0
 [1.0.0]: https://github.com/latte-carousel/react-latte-carousel/compare/0.10.0...1.0.0
 [0.10.0]: https://github.com/latte-carousel/react-latte-carousel/compare/0.9.0...0.10.0
