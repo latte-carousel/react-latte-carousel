@@ -1,4 +1,4 @@
-import { Carousel, Options } from "latte-carousel";
+import { Carousel, IOptions } from "latte-carousel";
 import * as React from "react";
 
 /**
@@ -160,5 +160,5 @@ export class LatteCarousel extends React.Component<ILatteCarouselProps> {
  */
 export interface ILatteCarouselProps {
     children: React.ReactNode[];
-    options: Options;
+    options: IOptions;
 }

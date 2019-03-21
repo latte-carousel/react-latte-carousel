@@ -3,7 +3,7 @@
 [![npm](https://img.shields.io/npm/l/react-latte-carousel.svg)](https://github.com/latte-carousel/react-latte-carousel/blob/master/LICENSE)
 
 <p align="center">
-    <img src="https://latte-carousel.github.io/img/colored_small.png" alt="LatteCarousel"/>
+    <img src="https://lattecarousel.dev/img/colored_small.png" alt="LatteCarousel"/>
 </p>
 
 # About
@@ -23,15 +23,14 @@ This package already includes .d.ts files.
 
 ```html
 <!-- UMD - Package -->
-<link rel="stylesheet" href="latte-carousel.min.css">
+<link rel="stylesheet" href="latte-carousel.min.css" />
 <script src="latte-carousel.min.js"></script>
 <script src="react-latte-carousel.min.js"></script>
 
 <!-- UMD - CDN -->
-<link rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/latte-carousel@1.4.0/dist/latte-carousel.min.css">
-<script src="https://cdn.jsdelivr.net/npm/latte-carousel@1.4.0/dist/latte-carousel.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/react-latte-carousel@1.1.0/dist/react-latte-carousel.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/latte-carousel@1.5.2/dist/latte-carousel.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/latte-carousel@1.5.2/dist/latte-carousel.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/react-latte-carousel@1.2.0/dist/react-latte-carousel.min.js"></script>
 ```
 
 ```jsx
@@ -81,21 +80,38 @@ render() {
 getOptions() {
     return {
         count: 3,
+        move: 1,
         touch: true,
+        mode: "align",
         buttons: true,
         dots: true,
         rewind: true,
         autoplay: 0,
         animation: 500,
         responsive: {
-            "0": { count: 1.5, buttons: false },
-            "480": { count: 2.5, buttons: false },
-            "768": { count: 3, touch: false },
-            "1440": { count: 4, touch: false },
+            "0": { count: 1.5, mode: "free", buttons: false },
+            "480": { count: 2.5, mode: "free", buttons: false },
+            "768": { count: 3, move: 3, touch: false, dots: false },
+            "1440": { count: 4, move: 2, touch: false, dots: false },
         },
     };
 }
 ```
+
+## Options
+
+| Name       | Type                 | Default   | Description                            |
+| ---------- | -------------------- | --------- | -------------------------------------- |
+| count      | Number               | 3         | Number of visible items                |
+| move       | Number               | 1         | Number of items to scroll              |
+| touch      | Boolean              | false     | Enable touch support                   |
+| mode       | String [align, free] | "align"   | Align animation to grid (touch only)   |
+| buttons    | Boolean              | true      | Enable carousel buttons                |
+| dots       | Boolean              | false     | Enable carousel dots                   |
+| rewind     | Boolean              | true      | Enable rewind at the end (or start)    |
+| autoplay   | Number               | 0         | Autoplay time in millis (0 to disable) |
+| animation  | Number               | 500       | Animation time in millis               |
+| responsive | Map<String, Object>  | undefined | Map of options for each breakpoint     |
 
 ## Features
 
