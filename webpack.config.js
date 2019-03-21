@@ -19,7 +19,7 @@ module.exports = {
     resolve: {
         extensions: [".tsx", ".jsx", ".js"],
     },
-    plugins: [new CleanWebpackPlugin(["./dist"]), new webpack.BannerPlugin(fs.readFileSync("./src/version", "utf8"))],
+    plugins: [new CleanWebpackPlugin(), new webpack.BannerPlugin(fs.readFileSync("./src/version", "utf8"))],
     output: {
         path: path.resolve(__dirname, "./dist"),
         filename: "react-latte-carousel.min.js",
