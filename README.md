@@ -34,9 +34,9 @@ This package already includes .d.ts files.
 <script src="react-latte-carousel.min.js"></script>
 
 <!-- UMD - CDN -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/latte-carousel@1.5.5/dist/latte-carousel.min.css" />
-<script src="https://cdn.jsdelivr.net/npm/latte-carousel@1.5.5/dist/latte-carousel.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/react-latte-carousel@1.2.1/dist/react-latte-carousel.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/latte-carousel@1.5.6/dist/latte-carousel.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/latte-carousel@1.5.6/dist/latte-carousel.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/react-latte-carousel@1.2.2/dist/react-latte-carousel.min.js"></script>
 ```
 
 ```jsx

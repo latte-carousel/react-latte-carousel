@@ -1,6 +1,6 @@
 {
     "name": "react-latte-carousel",
-    "version": "1.2.1",
+    "version": "1.2.2",
     "description": "LatteCarousel is a lightweight and responsive carousel.",
     "repository": "https://github.com/latte-carousel/react-latte-carousel.git",
     "author": {
@@ -32,23 +32,23 @@
         "lint:eslint": "eslint \"./**/*.js\""
     },
     "devDependencies": {
-        "@types/react": "^16.8.22",
-        "@types/react-dom": "^16.8.4",
+        "@types/react": "^16.9.3",
+        "@types/react-dom": "^16.9.1",
         "babel-standalone": "^6.26.0",
         "clean-webpack-plugin": "^3.0.0",
         "csscomb": "^4.3.0",
-        "eslint": "^6.0.0",
+        "eslint": "^6.5.0",
         "http-server": "^0.11.1",
         "prettier": "1.18.2",
-        "react": "^16.8.6",
-        "react-dom": "^16.8.6",
-        "ts-loader": "^6.0.4",
-        "tslint": "^5.18.0",
-        "typescript": "^3.5.2",
-        "webpack": "^4.35.0",
-        "webpack-cli": "^3.3.5"
+        "react": "^16.10.1",
+        "react-dom": "^16.10.1",
+        "ts-loader": "^6.2.0",
+        "tslint": "^5.20.0",
+        "typescript": "^3.6.3",
+        "webpack": "^4.41.0",
+        "webpack-cli": "^3.3.9"
     },
     "peerDependencies": {
-        "latte-carousel": "^1.5.5"
+        "latte-carousel": "^1.5.6"
     }
 }
